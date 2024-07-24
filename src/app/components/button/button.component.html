@@ -1,0 +1,7 @@
+<button class="btn" [class]="{
+    'btn--white':styleBtn==='white'?true:false,
+    'btn--purple':styleBtn==='purple'?true:false,
+}" 
+    (click)="onBtnClick()"
+[disabled]='isDisabled'
+>{{btnTxt}}</button>
